@@ -1,6 +1,6 @@
-# AhrefsApi
+# AhrefsAPI
 
-TODO: Write a gem description
+Lightweight wrapper around the Ahrefs API
 
 ## Installation
 
