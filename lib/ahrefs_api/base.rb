@@ -6,12 +6,13 @@ module AhrefsAPI
   class Base
     include HTTParty
     base_uri 'http://apiv2.ahrefs.com'
-    debug_output $stdout
     
     attr_accessor :mode
-    def initialize(api_token = ENV['AHREFS_TOKEN'])
+    def initialize(api_token = ENV['AHREFS_TOKEN'], activate_debug = false)
       @mode ||= :domain
       @token = api_token
+      self.class.debug_output $stdout if activate_debug
+      
       raise "No token: please provide a valid token for the AhrefsAPI" if @token.nil?
     end
     
