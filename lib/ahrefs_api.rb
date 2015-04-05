@@ -1,5 +1,6 @@
 require "ahrefs_api/version"
 require 'ahrefs_api/base'
+require 'ahrefs_api/backlinks'
 require 'ahrefs_api/backlinks_new_lost'
 require 'ahrefs_api/subscription_info'
 
